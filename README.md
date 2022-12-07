@@ -1,4 +1,4 @@
-### Simple Angular 13 + NgRx app.
+### Simple Angular 14 + NgRx app.
 
 ### ▶️ URL to the animals list: `http://localhost:4200/animals`
 
