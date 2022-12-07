@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import { Actions, ofType, createEffect } from '@ngrx/effects';
 import { concatMap, switchMap, map } from 'rxjs/operators';
 
-import { AnimalsService } from './../core/services/animals.service';
+import { AnimalsService } from '../core/services/animals.service';
 import {
   GetAnimals,
   GetAnimalsSuccess,

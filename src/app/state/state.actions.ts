@@ -1,6 +1,6 @@
 import { createAction } from '@ngrx/store';
 
-import { Animal, AnimalProfile } from './../core/models';
+import { Animal, AnimalProfile } from '../core/models';
 
 export const GetAnimals = createAction('Get Animals');
 

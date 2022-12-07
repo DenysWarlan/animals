@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
 
-import { Animal, AnimalProfile } from '../models';
+import { Animal, AnimalProfile } from 'src/app/core/models';
 
 @Injectable()
 export class AnimalsService {

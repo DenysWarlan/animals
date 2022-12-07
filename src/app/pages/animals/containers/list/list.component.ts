@@ -3,7 +3,7 @@ import { Store, select } from '@ngrx/store';
 
 import { State } from 'src/app/state/state.reducers';
 import { GetAnimals } from 'src/app/state/state.actions';
-import { getAnimals } from '../../../../state/state.selectors';
+import { getAnimals } from 'src/app/state/state.selectors';
 
 @Component({
   selector: 'app-animals-list',
