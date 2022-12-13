@@ -1,0 +1,19 @@
+<ng-container *ngIf="!!form" [formGroup]="form">
+  <div>
+    <input type="text" placeholder="full name" formControlName="fullName">
+  </div>
+  <div>
+    <input type="text" placeholder="email"  formControlName="email">
+    <p *ngIf="!!form.controls.email.errors"> Error </p>
+  </div>
+
+  <div>
+    <label for="animals">Choose a car:</label>
+
+    <select name="cars" id="animals"   formControlName="animalId">
+      <option *ngFor="let animal of (animals$ | async)" [value]="animal.id">{{animal.name}}</option>
+    </select>
+  </div>
+
+  <button [disabled]="form.invalid" (click)="submit()">Submit</button>
+</ng-container>

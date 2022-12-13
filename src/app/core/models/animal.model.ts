@@ -1,4 +1,5 @@
-import { AnimalProfile } from './animal-profile.model';
+import {FormControl} from '@angular/forms';
+import {AnimalProfile} from './animal-profile.model';
 
 export interface Animal {
   id: number;
@@ -14,4 +15,10 @@ export enum AnimalType {
   Elephant = 'elephant',
   Monkey = 'monkey',
   Parrot = 'parrot',
+}
+
+export interface FormOwner {
+  fullName: FormControl<string>;
+  email: FormControl<string>;
+  animalId: FormControl<number | null>;
 }

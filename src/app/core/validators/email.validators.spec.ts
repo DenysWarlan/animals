@@ -1,9 +1,9 @@
 /// <reference types="jasmine" />
 
-import { emailValidator } from './email.validators';
+import { isValidEmail } from './email.validators';
 
 describe('Email Validators', () => {
-  const testedFunction = emailValidator;
+  const testedFunction = isValidEmail;
 
   describe('VALID EMAILS', () => {
     it('owner@gmail.com', () => {
